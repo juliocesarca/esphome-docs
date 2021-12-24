@@ -47,6 +47,17 @@ not work.
             output: true
           inverted: false
 
+    # Individual inputs
+    binary_sensor:
+      - platform: gpio
+        name: "Botão"
+        pin:
+          pcf8574: pcf8575_hub
+          number: 0
+          # One of INPUT
+          mode: INPUT
+          inverted: yes
+
 Configuration variables:
 ************************
 
